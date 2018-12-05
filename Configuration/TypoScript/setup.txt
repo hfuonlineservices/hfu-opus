@@ -1,0 +1,16 @@
+plugin.tx_hfu_opus.settings {
+    baseUrl = {$plugin.tx_hfu_opus.baseUrl}
+}
+
+lib.contentElement {
+    templateRootPaths {
+        1337 = {$plugin.tx_hfu_opus.templateRootPaths}
+    }
+}
+
+tt_content {
+    hfu_opus_publist < lib.contentElement
+    hfu_opus_publist {
+        templateName = {$plugin.tx_hfu_opus.templateName}
+    }
+}

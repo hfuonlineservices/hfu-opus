@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+{namespace hfuopus=Hfu\HfuOpus\ViewHelpers}
+
+
+<f:if condition="{data}">
+    <f:if condition="{data.header}">
+        <f:render section="Header" optional="true">
+            <f:render partial="Header/All" arguments="{_all}" />
+        </f:render>
+    </f:if>
+
+    <f:if condition="{data.tx_hfuopus_publistid}">
+        <f:format.raw>
+            <hfuopus:publist publistid="{data.tx_hfuopus_publistid}" />
+        </f:format.raw>
+    </f:if>
+</f:if>
+
+</html>

@@ -1,0 +1,3 @@
+plugin.tx_hfu_opus.baseUrl = ''
+plugin.tx_hfu_opus.templateRootPaths = EXT:hfu_opus/Resources/Private/Templates/
+plugin.tx_hfu_opus.templateName = Publist.html
